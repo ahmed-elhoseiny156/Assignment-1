@@ -244,6 +244,18 @@ typedef struct
 
 int main()
 {
-    
+    hidecursor();
+
+    welcome();
+
+    while(1)
+    {
+        char c = choice();
+        Options((short)c);
+        if(pointer == 6)
+            break;
+    }
+
+
     return 0;
 }
